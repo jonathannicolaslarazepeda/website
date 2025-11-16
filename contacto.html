@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blask Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo"> 
+                <img src="img/logo01.png" alt="Logo">
+            </div>
+
+            <p class="description">
+                My work is primarily focused on Japanese aesthetics, particularly manga and anime, as well as ink and
+                watercolor techniques. I employ both traditional and digital methods, utilizing tools such as Photoshop,
+                Clip Studio, and Illustrator.
+            </p>
+
+            <nav class="menu">
+                <a href="index.html">Portafolio</a>
+                <a href="#">About me</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+
+            <div class="social">
+                <a href="https://www.youtube.com/@HBatto"><i class="fa-brands fa-youtube fa-xl" style="color: #40454f;"></i></a>
+                <a href="https://x.com/hbatto"><i class="fa-brands fa-square-twitter fa-xl" style="color: #40454f;"></i></a>
+                <a href="https://www.instagram.com/hbatto"><i class="fa-brands fa-instagram fa-xl" style="color: #40454f;"></i></a>
+                <a href="#"><i class="fa-brands fa-square-linkedin fa-xl" style="color: #40454f;"></i></a>
+            </div>
+        </aside>
+
+        <!-- Contacto -->
+        <div class="contact">
+            <p>
+                Si necesitas más información o quieres ponerte en contacto para cualquier consulta, utiliza el siguiente formulario.
+            </p>
+
+            <form id="contact-form" action="show-data.html">
+
+                <div class="form-field">
+                    <label for="contact-name">Nombre</label>
+                    <p><input type="text" id="contact-name" name="contact-name"></p>
+                    <div><span id="contact-name-required-error">*campo requerido</span></div>
+                </div>
+
+                <div class="form-field">
+                    <label for="contact-email">Email</label>
+                    <p><input type="text" id="contact-email" name="contact-email"></p>
+                    <div><span id="contact-email-required-error">*campo requerido</span></div>
+                </div>
+
+                <div class="form-field">
+                    <label for="contact-subject">Asunto</label>
+                    <p><input type="text" id="contact-subject" name="contact-subject"></p>
+                    <div><span id="contact-subject-required-error">*campo requerido</span></div>
+                </div>
+
+                <div class="form-field">
+                    <label for="contact-content">Comentario</label>
+                    <p><input type="text" id="contact-content" name="contact-content"></p>
+                    <div><span id="contact-content-required-error">*campo requerido</span></div>
+                </div>
+
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+
+    </div>
+
+    <script src="js/validate-contact-form.js"></script>
+    <script src="https://kit.fontawesome.com/7632ca79ff.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

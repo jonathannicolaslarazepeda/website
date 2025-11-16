@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: white;
+  color: #333;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* --- Menu --- */
+
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 250px;
+  height: 100vh;
+  overflow-y: auto;
+  /* Por si el contenido del menú es largo */
+  padding: 40px 30px;
+  z-index: 1000;
+}
+
+body {
+  overflow-y: scroll;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+.description {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.menu a {
+  display: block;
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+  margin-bottom: 12px;
+  transition: color 0.3s;
+}
+
+.menu a:hover {
+  color: #000;
+}
+
+.social {
+  align-self: center;
+  margin-top: 30px;
+}
+
+.social a {
+
+  margin-right: 0px;
+}
+
+.social img {
+  width: 20px;
+  opacity: 0.6;
+  transition: opacity 0.3s;
+}
+
+.social img:hover {
+  opacity: 1;
+}
+
+/* --- GALERÍA --- */
+
+.gallery {
+  column-count: 1;
+  column-gap: 15px;
+  padding: 30px;
+  margin-left: 250px;
+  /* espacio para el sidebar */
+}
+
+.gallery img {
+  width: 100%;
+  margin-bottom: 15px;
+  display: block;
+  border-radius: 8px;
+  break-inside: avoid;
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+  transition: transform 0.2s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.03);
+}
+
+/* --- ABOUT --- */
+
+.about {
+
+  display: block;
+  column-count: initial;
+  padding-top: 100px;
+  padding: 30px;
+  margin-left: 250px;
+}
+
+
+/* --- CONTACTO--- */
+
+.contact {
+
+  display: block;
+  column-count: initial;
+  padding-top: 100px;
+  padding: 30px;
+  margin-left: 250px;
+}
+
+.form-field {
+  margin-bottom: 20px;
+  break-inside: avoid;
+}
+
+.form-field span {
+  break-inside: avoid;
+}
+
+#contact-name-required-error,
+#contact-email-required-error,
+#contact-subject-required-error,
+#contact-content-required-error {
+  color: red;
+  font-weight: bold;
+  visibility: hidden;
+}
+
+@media (min-width: 600px) {
+  .gallery {
+    column-count: 2;
+  }
+}
+
+@media (min-width: 900px) {
+  .gallery {
+    column-count: 3;
+  }
+}
+
+@media (min-width: 1200px) {
+  .gallery {
+    column-count: 4;
+  }
+}
